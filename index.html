@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templat Laman Web Saya</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==================================================
+        BAHAGIAN CSS (GAYA & REKA BENTUK)
+        **AMARAN: Pengguna baru tidak disyorkan mengubah bahagian ini.**
+        ==================================================
+        */
+        :root {
+            --warna-latar: #111827;
+            --warna-kad: #1f2937;
+            --warna-teks: #d1d5db;
+            --warna-tajuk: #f9fafb;
+            --warna-utama: #3b82f6;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--warna-latar); color: var(--warna-teks); line-height: 1.6; }
+        .container { max-width: 700px; margin: 0 auto; padding: 20px; }
+        .bahagian-nyahaktif { display: none !important; }
+        .bahagian { background-color: var(--warna-kad); padding: 25px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #374151; }
+        h1, h2 { color: var(--warna-tajuk); font-weight: 700; }
+        .profil { text-align: center; }
+        .profil img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--warna-utama); object-fit: cover; margin-bottom: 15px; }
+        .profil h1 { font-size: 2rem; margin-bottom: 5px; }
+        .profil .slogan { font-size: 1.1rem; color: var(--warna-teks); margin-bottom: 10px; }
+        .pautan { display: block; background-color: var(--warna-utama); color: white; padding: 15px; margin: 10px 0; text-align: center; text-decoration: none; border-radius: 8px; font-weight: 500; transition: transform 0.2s ease, background-color 0.2s ease; }
+        .pautan:hover { background-color: #2563eb; transform: scale(1.03); }
+        .galeri-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+        .galeri-grid figure { margin: 0; }
+        .galeri-grid img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid #374151; }
+        .galeri-grid figcaption { font-size: 0.9rem; text-align: center; margin-top: 5px; color: #9ca3af; }
+        .hubungi p, .footer p { margin-bottom: 10px; }
+        .hubungi a, .footer a { color: var(--warna-utama); text-decoration: none; }
+        .hubungi a:hover, .footer a:hover { text-decoration: underline; }
+        .footer { text-align: center; font-size: 0.9rem; color: #4b5563; padding: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bahagian profil bahagian-aktif" id="profil">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzYiesZjKholZy5ERgGTHtl90Za-G3n3KMTOPtf95ffxNvafvyxoPMdvoTOesym7U5gQmtZtblco_baL7gqQDwxxuGrV4fHA3a099ugbUptWC4-7EA2QdfissE49Y9BQGUFa79hjfNrhu2cWfuRypsfIHLLKSBJrVdT4iEd-gzd9LPbn3qHad2TNy6GJw/s1600/my-profile-pic.jpg" alt="Gambar Profil">
+            
+            <h1>Khairul Ariffin</h1>
+            
+            <p class="slogan">Pembangun Laman Web &amp; Digital Marketer</p>
+        </div>
+
+
+        <div class="bahagian tentang bahagian-aktif" id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>
+                Selamat datang ke laman saya! Saya seorang yang bersemangat dalam dunia teknologi dan reka bentuk. Saya suka membantu perniagaan kecil untuk berkembang secara digital dengan membina laman web yang menarik dan berfungsi. bersemangat waja terus membara</p>
+        </div>
+
+
+        <div class="bahagian pautan-senarai bahagian-aktif" id="pautan">
+            <h2 style="text-align:center; margin-bottom:15px;">Pautan Penting</h2>
+            
+            <a href="#" class="pautan">Laman Web Rasmi Saya</a>
+            
+            <a href="#" class="pautan">Lihat Portfolio Kerja Saya</a>
+            
+            <a href="#" class="pautan">Hubungi di WhatsApp</a>
+
+            </div>
+
+
+        <div class="bahagian galeri bahagian-aktif" id="galeri">
+            <h2 style="margin-bottom:15px;">Galeri Kerja</h2>
+            <div class="galeri-grid">
+                <figure>
+                    <img src="https://picsum.photos/id/10/400/400" alt="Contoh Kerja 1">
+                    <figcaption>Projek Laman Web A</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="https://picsum.photos/id/20/400/400" alt="Contoh Kerja 2">
+                    <figcaption>Reka logo brand</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="https://picsum.photos/id/30/400/400" alt="Contoh Kerja 3">
+                    <figcaption>Aplikasi Mudah Alih C</figcaption>
+                </figure>
+
+                </div>
+        </div>
+        
+        
+        <div class="bahagian hubungi bahagian-aktif" id="hubungi">
+            <h2>Hubungi Saya</h2>
+            <p>📧 Emel: <a href="mailto:nama@emel.com">nama@emel.com</a></p>
+            <p>📞 Telefon: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+            <p>📱 Media Sosial: <a href="#">@NamaAnda</a></p>
+        </div>
+        
+        
+        <footer class="footer">
+            <p>© <span id="tahun-semasa">2025</span> Nama Anda. Hak Cipta Terpelihara.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Skrip kecil untuk memaparkan tahun semasa secara automatik
+        document.getElementById('tahun-semasa').textContent = new Date().getFullYear();
+    </script>
+
+<script>
+        document.body.contentEditable = true;
+        document.body.style.outline = 'none';
+        let lastBodyHTML = document.body.innerHTML;
+        document.body.addEventListener('blur', (e) => {
+            if (document.body.innerHTML !== lastBodyHTML) {
+                lastBodyHTML = document.body.innerHTML;
+                window.parent.postMessage({
+                    type: 'update-source',
+                    newBody: lastBodyHTML
+                }, '*');
+            }
+        }, true);
+    </script>
+
+
+
+
+</body>
+</html>
